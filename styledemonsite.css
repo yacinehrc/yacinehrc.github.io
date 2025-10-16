@@ -1,0 +1,142 @@
+:root {
+  --beige: #f7f3ee;
+  --gray: #d4d4d4;
+  --dark: #222;
+  --accent: #a38f78;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: var(--beige);
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ----- NAVIGATION ----- */
+nav {
+  background-color: var(--gray);
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ----- MAIN ----- */
+main {
+  padding: 3em 1em;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+  animation: fadeIn 0.8s ease;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2, h3 {
+  color: var(--accent);
+  text-align: center;
+}
+
+/* ----- IMAGE DE THE ROCK ----- */
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+figure img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+figure img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+figcaption {
+  color: #555;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+/* ----- FORMULAIRE ----- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 600;
+}
+
+input, select, button {
+  padding: 0.8em;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8c7865;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  text-align: center;
+  padding: 1.5em;
+  color: #555;
+  font-size: 0.9em;
+}
+
+
